@@ -12,7 +12,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-// -----------------------------------------------------------------------------------------
+// 0 Base -----------------------------------------------------------------------------------------
                 default_layer {
                         display-name = "Base";
                         bindings = <
@@ -31,30 +31,31 @@
                         >;
                 };
 
-// -----------------------------------------------------------------------------------------
+// 1 Nav -----------------------------------------------------------------------------------------
                 lower_layer {
-
-// | BTCLR|     |     |     |     |     |xxx|     |     |  UP |     |     | BKSP |
-// |  BT1 |     |     |     |     |     |xxx|     | LFT |  UP | RGT |     |      |
-// |  BT2 |     |     |     |     |     |xxx|     |     |     |     |     |      |
-//                    | GUI |     | SPC |xxx| ENT |     | ALT |
-
                         display-name = "Nav";
                         bindings = <
 
-   &bt BT_CLR   &none  &none  &none  &none  &none          &none    &none    &kp UP   &none     &none  &kp BSPC
-   &bt BT_SEL 0 &none  &none  &none  &none  &none          &none    &kp LEFT &kp DOWN &kp RIGHT &none  &none 
-   &bt BT_SEL 1 &none  &none  &none  &none  &none          &none    &none    &none    &none     &none  &none 
-                            &kp LGUI &trans &kp SPACE      &kp RET  &trans   &kp RALT
+// | BTCLR   |     |     |     |     |     |xxx|     |     |  UP |     |     | BKSP |
+&bt BT_SEL 0 &none &none &none &none &none     &none &none &kp UP &none &none &kp BSPC
+
+// |  BT1    |     |     |     |     |     |xxx|     | LFT |  DOWN | RGT |     |      |
+&bt BT_SEL 1 &none &none &none &none &none     &none &kp LEFT &kp DOWN &kp RIGHT &none  &none
+
+// |  BT2    |     |     |     |     |     |xxx|     |     |     |     |     |      |
+&bt BT_CLR   &none &none &none &none &none     &none &none &none &none &none &none
+
+//                  | GUI    |     | SPC   |xxx| ENT   |      | ALT |
+                    &kp LGUI &trans &kp SPACE  &kp RET &trans &kp RALT
                         >;
                 };
 
-// -----------------------------------------------------------------------------------------
+// 2 Num-----------------------------------------------------------------------------------------
                 raise_layer {
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  TAB |  !  |  @  |  #  |  $  |  %  |xxx  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL |     |     |     |     |     |xxx|  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |xxx|  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |xxx| ENT |     | ALT |
 
                         display-name = "Num";
                         bindings = <
