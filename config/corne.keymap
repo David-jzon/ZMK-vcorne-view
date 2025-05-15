@@ -16,6 +16,10 @@
             key-positions = <1 2>;
             bindings = <&kp TAB;
         };
+    };
+};
+/ {
+    combos {
         combo_esc {
             timeout-ms = <50>;
             key-positions = <9 10>;
