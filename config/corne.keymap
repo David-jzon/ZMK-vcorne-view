@@ -40,8 +40,8 @@
 // | CTRL |  A  |  S  |  D  |  F  |  G  |xxx|  H  |  J   |  K  |  L  | Ö(;)| Å(')|
 &kp LCTRL &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K &kp L &kp SEMI &kp SQT
 
-// | SHFT |     |  Z  |  X  |  C  |  V  |xxx|  B  |  N  |  M   |  ,  |  .  |  /  |
-&kp LSHFT &none &kp Z &kp X &kp C &kp V     &kp B &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH 
+// |      | SHFT|  Z  |  X  |  C  |  V  |xxx|  B  |  N  |  M   |  ,  |  .  |  /  |
+ &none &kp LSHFT &kp Z &kp X &kp C &kp V    &kp B &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH 
 
 //                    | GUI | LWR | SPC |xxx| ENT | RSE  | ALT |
          &lt 3 LGUI &mo 1 &lt 2 SPACE         &lt 1 RET &mo 2 &kp RALT
@@ -59,8 +59,8 @@
 // |         |     |     |     |     |     |xxx|     | LFT |  DOWN | RGT |     |      |
    &none     &none &none &none &none &none     &none &kp LEFT &kp DOWN &kp RIGHT &none  &none
 
-// |         |     |     |     |     |     |xxx|     |     |     |     |     |      |
-   &none     &none &none &none &none &none     &none &none &none &none &none &none
+// |         | SHFT|     |     |     |     |xxx|     |     |     |     |     |      |
+   &none &kp LSHFT &none &none &none &none     &none &none &none &none &none &none
 
 //                  | GUI    |     | SPC   |xxx| ENT   |      | ALT |
                     &kp LGUI &trans &kp SPACE  &kp RET &trans &kp RALT
