@@ -44,7 +44,7 @@
 &kp LSHFT &none &kp Z &kp X &kp C &kp V     &kp B &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH 
 
 //                    | GUI | LWR | SPC |xxx| ENT | RSE  | ALT |
-         &kp LGUI &mo 1 &lt 2 SPACE         &lt 1 RET &mo 2 &kp RALT
+         &lt 3 LGUI &mo 1 &lt 2 SPACE         &lt 1 RET &mo 2 &kp RALT
                         >;
                 };
 
@@ -53,14 +53,14 @@
                         display-name = "Nav";
                         bindings = <
 
-// | BTCLR   |     |     |     |     |     |xxx|     |     |  UP |     |     | BKSP |
-&bt BT_SEL 0 &none &none &none &none &none     &none &none &kp UP &none &none &kp BSPC
+// |         |     |     |     |     |     |xxx|     |     |  UP |     |     | BKSP |
+   &none     &none &none &none &none &none     &none &none &kp UP &none &none &kp BSPC
 
-// |  BT1    |     |     |     |     |     |xxx|     | LFT |  DOWN | RGT |     |      |
-&bt BT_SEL 1 &none &none &none &none &none     &none &kp LEFT &kp DOWN &kp RIGHT &none  &none
+// |         |     |     |     |     |     |xxx|     | LFT |  DOWN | RGT |     |      |
+   &none     &none &none &none &none &none     &none &kp LEFT &kp DOWN &kp RIGHT &none  &none
 
-// |  BT2    |     |     |     |     |     |xxx|     |     |     |     |     |      |
-&bt BT_CLR   &none &none &none &none &none     &none &none &none &none &none &none
+// |         |     |     |     |     |     |xxx|     |     |     |     |     |      |
+   &none     &none &none &none &none &none     &none &none &none &none &none &none
 
 //                  | GUI    |     | SPC   |xxx| ENT   |      | ALT |
                     &kp LGUI &trans &kp SPACE  &kp RET &trans &kp RALT
@@ -83,8 +83,23 @@
                         >;
                 };
 
+// 3 BT-----------------------------------------------------------------------------------------
                 extra_1 {
-                        status = "reserved";
+                        display-name = "BT";
+                        bindings = <
+
+// |   BT1   |     |     |     |     |     |xxx|     |     |  UP  |     |     | BKSP |
+&bt BT_SEL 0 &none &none &none &none &none     &none &none &kp UP &none &none &kp BSPC
+
+// |   BT2   |     |     |     |     |     |xxx|     | LFT |  DOWN | RGT |     |      |
+&bt BT_SEL 1 &none &none &none &none &none     &none &kp LEFT &kp DOWN &kp RIGHT &none  &none
+
+// |  BTCLR  |     |     |     |     |     |xxx|     |     |     |     |     |      |
+&bt BT_CLR   &none &none &none &none &none     &none &none &none &none &none &none
+
+//                  | GUI    |     | SPC   |xxx| ENT   |      | ALT |
+                    &kp LGUI &trans &kp SPACE  &kp RET &trans &kp RALT
+                        >;
                 };
 
                 extra_2 {
