@@ -34,17 +34,17 @@
                         display-name = "Base";
                         bindings = <
 
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |xxx|  Y  |  U   |  I  |  O  |  P  |  Å  |
-  &kp TAB &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I &kp O &kp P &kp LBKT
+// |      |  Q  |  W  |  E  |  R  |  T  |xxx                |  Y  |  U   |  I  |  O  |  P  |     |
+   &none  &kp Q &kp W &kp E &kp R &kp T                     &kp Y &kp U  &kp I &kp O &kp P &none
 
-// | CTRL |  A  |  S  |  D  |  F  |  G  |xxx|  H  |  J   |  K  |  L  | Ö(;)| Å(')|
-&kp LCTRL &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K &kp L &kp SEMI &kp SQT
+// |      |  A  |  S  |  D  |  F  |  G  |xxx                |  H  |  J   |  K  |  L  | Ö(;)|     |
+   &none  &mt LSHFT A &mt LALT S &mt LCTRL D &kp F &kp G    &kp H &mt RCTRL &RALT K &mt RSHFT L &kp SEMI &none
 
-// |      | SHFT|  Z  |  X  |  C  |  V  |xxx|  B  |  N  |  M   |  ,  |  .  |  /  |
- &none &kp LSHFT &kp Z &kp X &kp C &kp V    &kp B &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH 
+// |      | <>  |  Z  |  X  |  C  |  V  |xxx                |  B  |  N  |  M   |  ,  |  .  |     |
+ &none   &kp LT &kp Z &kp X &kp C &kp V                     &kp B &kp N &kp M  &kp COMMA &kp DOT  &none 
 
-//                    | GUI | LWR | SPC |xxx| ENT | RSE  | ALT |
-         &lt 3 LGUI &mo 1 &lt 2 SPACE         &lt 1 RET &mo 2 &kp RALT
+//                    | GUI | LWR | SPC |xxx                | ENT | RSE  | ALT |
+         &lt 3 LGUI &mo 1 &lt 2 SPACE                       &lt 1 RET &mo 2 &kp RALT
                         >;
                 };
 
@@ -53,14 +53,14 @@
                         display-name = "Nav";
                         bindings = <
 
-// |         |     |     |     |     |     |xxx|     |     |  UP |     |     | BKSP |
-   &none     &none &none &none &none &none     &none &none &kp UP &none &none &kp BSPC
+// |         |      |      |      |      |     |xxx|     |     |  UP |     |     | BKSP |
+   &none     &none  &none  &none  &none  &none     &none &none &kp UP &none &none &kp BSPC
 
-// |         |     |     |     |     |     |xxx|     | LFT |  DOWN | RGT |     |      |
-   &none     &none &none &none &none &none     &none &kp LEFT &kp DOWN &kp RIGHT &none  &none
+// |         |      |      |      |      |     |xxx|     | LFT |  DOWN | RGT |     |      |
+   &none     &trans &trans &trans &trans &trans     &none &kp LEFT &kp DOWN &kp RIGHT &none  &none
 
-// |         | SHFT|     |     |     |     |xxx|     |     |     |     |     |      |
-   &none &kp LSHFT &none &none &none &none     &none &none &none &none &none &none
+// |         | SHFT |      |      |      |     |xxx|     |     |     |     |     |      |
+   &none  &kp LSHFT &none  &none  &none  &none     &none &none &none &none &none &none
 
 //                  | GUI    |     | SPC   |xxx| ENT   |      | ALT |
                     &kp LGUI &trans &kp SPACE  &kp RET &trans &kp RALT
@@ -71,7 +71,7 @@
                 raise_layer {
                         display-name = "Num";
                         bindings = <
-// |  TAB |  !  |  @  |  #  |  $  |  %  |xxx  ^  |  &  |  *  |  (  |  )  | BKSP |
+// |  TAB |  !  |  @  |  #  |  $  |  %  |xxx|  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |xxx|  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |xxx|  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |xxx| ENT |     | ALT |
