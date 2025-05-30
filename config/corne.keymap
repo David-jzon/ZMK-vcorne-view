@@ -51,10 +51,10 @@
         lower_layer {
             display-name = "Navi";
             bindings = <
-&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH       &kp LS(N7)  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &none     &kp UP    &none      &none  &none
+&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH       &kp AMPS    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &none     &kp UP    &none      &none  &none
 &trans  &kp PERCENT      &kp AT             &kp RA(POUND)  &kp DOLLAR  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
-&trans  &none            &none              &none          &none       &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none     &none     &none      &none  &none
-                                            &kp LGUI       &none       &kp SPACE               &kp RET                &none     &kp RALT
+&trans  &kp F2           &none              &none          &none       &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none     &none     &none      &none  &none
+                                            &kp LGUI       &none       &kp SPACE               &kp RET                &none     &none
             >;
         };
 
@@ -63,10 +63,10 @@
         raise_layer {
             display-name = "Num";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                          &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&trans  &none  &none  &none  &none  &none        &kp LS(KP_DIVIDE)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &none
+&trans  &none  &none  &none  &none  &none        &kp KP_MULTIPLY    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &none
+&trans  &none  &none  &none  &none  &none        &kp KP_NUMBER_0    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER     &none
+                      &none  &none  &kp SPACE    &kp RET            &none            &none
             >;
         };
 
