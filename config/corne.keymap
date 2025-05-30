@@ -42,7 +42,7 @@
 &kp TAB           &kp Q          &kp W  &kp E              &kp R  &kp T          &kp Y      &kp U  &kp I     &kp O      &kp P     &kp LEFT_BRACE
 &kp LEFT_CONTROL  &kp A          &kp S  &kp D              &kp F  &kp G          &kp H      &kp J  &kp K     &kp L      &kp SEMI  &kp SINGLE_QUOTE
 &kp LEFT_SHIFT    &kp LESS_THAN  &kp Z  &kp X              &kp C  &kp V          &kp B      &kp N  &kp M     &kp COMMA  &kp DOT   &kp SLASH
-                                        &mt LEFT_ALT LGUI  &mo 1  &lt 2 SPACE    &lt 1 RET  &mo 2  &kp RALT
+                                        &mt LEFT_ALT LGUI  &mo 2  &lt 2 SPACE    &lt 1 RET  &mo 2  &kp RALT
             >;
         };
 
@@ -63,9 +63,9 @@
         raise_layer {
             display-name = "Num";
             bindings = <
-&trans  &none  &none  &none  &none  &none        &kp LS(KP_DIVIDE)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &none
-&trans  &none  &none  &none  &none  &none        &kp KP_MULTIPLY    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &none
-&trans  &none  &none  &none  &none  &none        &kp KP_NUMBER_0    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER     &none
+&trans  &none  &none  &none  &none  &none        &kp LS(KP_DIVIDE)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &none
+&trans  &none  &none  &none  &none  &none        &kp KP_MINUS       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &none
+&trans  &none  &none  &none  &none  &none        &kp KP_NUMBER_0    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER        &none
                       &none  &none  &kp SPACE    &kp RET            &none            &none
             >;
         };
