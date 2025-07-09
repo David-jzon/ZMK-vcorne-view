@@ -51,9 +51,9 @@
         lower_layer {
             display-name = "Nav";
             bindings = <
-&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH       &kp AMPERSAND  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &none     &kp UP    &none      &none  &none
-&trans  &kp PERCENT      &kp AT             &kp RA(POUND)  &kp DOLLAR     &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
-&trans  &none            &none              &none          &none          &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none     &none     &none      &none  &none
+&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH       &kp AMPERSAND  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &none     &kp UP    &none      &kp UNDER  &none
+&trans  &kp PERCENT      &kp AT             &kp RA(POUND)  &kp DOLLAR     &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp LEFT  &kp DOWN  &kp RIGHT  &none      &none
+&trans  &none            &none              &none          &none          &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none     &none     &none      &none      &none
                                             &kp LGUI       &none          &kp SPACE               &kp RET                &none     &none
             >;
         };
@@ -63,10 +63,10 @@
         raise_layer {
             display-name = "Num";
             bindings = <
-&trans  &none  &none  &none  &none  &kp KP_EQUAL    &kp LS(KP_DIVIDE)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &none
-&trans  &none  &none  &none  &none  &none           &kp KP_MINUS       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &none
-&trans  &none  &none  &none  &none  &none           &kp KP_NUMBER_0    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER        &none
-                      &none  &none  &kp SPACE       &kp RET            &none            &none
+&trans  &kp DELETE  &none  &none  &none  &kp KP_EQUAL    &kp LS(KP_DIVIDE)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &none
+&trans  &none       &none  &none  &none  &none           &kp KP_MINUS       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &none
+&trans  &none       &none  &none  &none  &none           &kp KP_NUMBER_0    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER        &none
+                           &none  &none  &kp SPACE       &kp RET            &none            &none
             >;
         };
 
