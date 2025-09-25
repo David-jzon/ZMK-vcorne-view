@@ -23,14 +23,19 @@
             key-positions = <36 41>;
         };
 
-        Enter {
+        Combo_Enter {
             bindings = <&kp ENTER>;
             key-positions = <22 23>;
         };
 
-        Tab {
+        Combo_ESC {
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
+        };
+
+        Combo_DEL {
+            bindings = <&kp DELETE>;
+            key-positions = <40 9 10>;
         };
     };
 };
