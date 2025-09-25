@@ -35,7 +35,8 @@
 
         Combo_DEL {
             bindings = <&kp DELETE>;
-            key-positions = <40 9 10>;
+            key-positions = <9 10>;
+            layers = <2>;
         };
     };
 };
